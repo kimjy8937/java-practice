@@ -17,7 +17,9 @@ public class Application2 {
             hs.add(random.nextInt(10)); // 0~9 사이의 난수
         }
         // 4개의 난수 정수배열로 생성
-        nums = hs.stream().mapToInt(Integer::intValue).toArray();
+        nums = hs.stream()
+                .mapToInt(Integer::intValue)
+                .toArray();
 
         // 10번 카운트 돌면서 4자리 숫자 입력받기
         while(count != 0){
